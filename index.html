@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://mohdwaqas20.github.io/CodeAlpha_Resume_Builder/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://mohdwaqas20.github.io/CodeAlpha_Resume_Builder/logo.png" type="image/x-icon">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h1>Generate Your <span>Resume</span></h1>
+    <div class="container">
+        <div class="personal-info"><hr>
+            <h2 style="color:#081b29" align="center">*Personal Information</h2>
+            <label><b>First Name:</b></label><br>
+            <input type="text" id="f_name" placeholder="First Name" required /><br>
+            <label><b>Last Name:</b></label><br>
+            <input type="text" id="l_name" placeholder="Last Name" required /><br>
+            <label><b>Father Name:</b></label><br>
+            <input type="text" id="ft_name" placeholder="Father Name" required /><br>
+            <label><b>Email:</b></label><br>
+            <input type="text" id="email" placeholder="Email" required /><br>
+            <label><b>Address:</b></label><br>
+            <input type="text" id="address" placeholder="Address" required /><br>
+            <label><b>Phone No:</b></label><br>
+            <input type="text" id="phone" placeholder="Phone No" required />
+        </div><br><hr>
+        <div class="objective">
+            <h2 style="color:#081b29" align="center">*Objective</h2>
+            <textarea rows="4" cols="50" id="object" placeholder="Write About Your Objective"></textarea>
+        </div><br><hr>
+        <div class="qualification">
+            <h2 style="color:#081b29" align="center">*Qualification</h2>
+            <table id="myTable">
+                <colgroup>
+                    <col width="160">
+                    <col width="170">
+                    <col width="350">
+                    <col width="170">
+                </colgroup>
+                <tr>
+                    <th>Class</th>
+                    <th>Year of Passing</th>
+                    <th>Board/University</th>
+                    <th>Percentage %</th>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td><input type="text" class="table_input" id="year1" placeholder="Enter Passing Year" required /></td>
+                    <td><input type="text" class="table_input1" id="bu1" placeholder="Enter Board/University/Institute Name" required /></td>
+                    <td><input type="text" class="table_input" id="per1" placeholder="Enter Percentage" required /></td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td><input type="text" class="table_input" id="year2" placeholder="Enter Passing Year" required /></td>
+                    <td><input type="text" class="table_input1" id="bu2" placeholder="Enter Board/University/Institute Name" required /></td>
+                    <td><input type="text" class="table_input" id="per2" placeholder="Enter Percentage" required /></td>
+                </tr>
+                <tr>
+                    <td>Grad.</td>
+                    <td><input type="text" class="table_input" id="year3" placeholder="Enter Passing Year" required /></td>
+                    <td><input type="text" class="table_input1" id="bu3" placeholder="Enter Board/University/Institute Name" required /></td>
+                    <td><input type="text" class="table_input" id="per3" placeholder="Enter Percentage" required /></td>
+                </tr>
+                <tr>
+                    <td>Post-Grad.</td>
+                    <td><input type="text" class="table_input" id="year4" placeholder="Enter Passing Year" required /></td>
+                    <td><input type="text" class="table_input1" id="bu4" placeholder="Enter Board/University/Institute Name" required /></td>
+                    <td><input type="text" class="table_input" id="per4" placeholder="Enter Percentage" required /></td>
+                </tr>
+            </table>
+            
+
+        </div><br><hr>
+        <div class="experience">
+            <h2 style="color:#081b29" align="center">*Experience</h2>
+            <textarea rows="4" cols="50" id="expert" placeholder="Write About Your Experience"></textarea>
+        </div><br><hr>
+        <div class="technical-skill">
+            <h2 style="color:#081b29" align="center">*Technical Skill</h2>
+            <textarea rows="4" cols="50" id="skill" placeholder="Write About Your Technical Skill"></textarea>
+        </div><br><hr><br><br>
+        <div class="button-container">
+            <button class="pdf-button" onclick="genPDF()">Create Resume PDF</button>
+          </div>
+          
+    </div><br><br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://mohdwaqas20.github.io/CodeAlpha_Resume_Builder/script.js"></script>
+</body>
+</html>
